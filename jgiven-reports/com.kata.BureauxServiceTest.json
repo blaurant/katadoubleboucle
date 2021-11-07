@@ -1,0 +1,123 @@
+{
+  "className": "com.kata.BureauxServiceTest",
+  "name": "Bureaux Service",
+  "scenarios": [
+    {
+      "className": "com.kata.BureauxServiceTest",
+      "testMethodName": "allocationTest",
+      "description": "Allocation test",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "casesAsTable": false,
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "dix bureaux",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "dix bureaux"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 53438,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "deux groupes de trois personnes",
+              "words": [
+                {
+                  "value": "and",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "deux groupes de trois personnes"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 1135444,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "alloue les bureaux",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "alloue les bureaux"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 6999666,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "nombre de bureau occupe",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "nombre de bureau occupe"
+                },
+                {
+                  "value": "2",
+                  "argumentInfo": {
+                    "argumentName": "nombreDeBureaux",
+                    "formattedValue": "2"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 8158229,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "nombre de bureau libre",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "nombre de bureau libre"
+                },
+                {
+                  "value": "8",
+                  "argumentInfo": {
+                    "argumentName": "nombreDeBureaux",
+                    "formattedValue": "8"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 972182,
+              "depth": 0,
+              "parentFailed": false
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 60070954
+        }
+      ],
+      "durationInNanos": 60070954,
+      "executionStatus": "SUCCESS"
+    }
+  ],
+  "tagMap": {}
+}
