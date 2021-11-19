@@ -1,4 +1,4 @@
-package com.kata;
+package com.kata.domain;
 
 public class Groupe {
     private static final int MIN_GROUPE = 0;

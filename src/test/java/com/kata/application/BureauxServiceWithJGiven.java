@@ -1,5 +1,7 @@
-package com.kata;
+package com.kata.application;
 
+import com.kata.domain.Bureaux;
+import com.kata.domain.Groupe;
 import com.tngtech.jgiven.Stage;
 import com.tngtech.jgiven.annotation.ExpectedScenarioState;
 import com.tngtech.jgiven.annotation.ProvidedScenarioState;
@@ -9,10 +11,7 @@ import io.vavr.collection.List;
 import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
-/**
- * Unit test for simple BureauxService.
- */
-public class BureauxServiceTest extends ScenarioTest<GivenSomeState, WhenSomeAction, ThenSomeOutcome> {
+public class BureauxServiceWithJGiven extends ScenarioTest<GivenSomeState, WhenSomeAction, ThenSomeOutcome> {
 
     @Test
     public void allocationTest() {
@@ -52,7 +51,7 @@ class WhenSomeAction extends Stage<WhenSomeAction> {
     private List<Groupe> groupes;
 
     public WhenSomeAction alloueLesBureaux() {
-        this.bureaux = this.bureaux.allouerLesBureaux(this.groupes);
+        this.bureaux = new BureauxService(this.bureaux).allouerDesBureauxPour(this.groupes);
         return self();
     }
 }

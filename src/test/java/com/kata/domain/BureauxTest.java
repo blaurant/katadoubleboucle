@@ -1,4 +1,4 @@
-package com.kata;
+package com.kata.domain;
 
 import io.vavr.collection.List;
 import org.junit.Test;
@@ -20,16 +20,6 @@ public class BureauxTest {
     @Test
     public void nomberOfBureaux() {
         assertThat(Bureaux.of(5).quantityOfBureaux()).isEqualTo(5);
-    }
-
-    @Test
-    public void allouer() {
-        assertThat(Bureaux.of(10).allouer(new Groupe(1)).nombreDeBureauDisponibles()).isEqualTo(9);
-    }
-
-    @Test(expected = IllegalArgumentException.class)
-    public void tropAllouer() {
-        Bureaux.of(10).allouer(new Groupe(11)).nombreDeBureauDisponibles();
     }
 
     @Test

@@ -1,0 +1,12 @@
+
+Il y a plein de choses inutiles dans l'énoncé.
+L'objectif est d'en sortir que ce qu'il faut (et il ne faut pas grand chose)
+pour se rendre compte que l'on fait très vite du sur-design.
+
+Le terme "allouer" ou "réserver" n'est pas présent dans l'énoncé.
+Il faut justement trouver la commande qui est implicite dans l'énoncé.
+
+Seul un compteur de bureau occupé est nécessaire pour réaliser le premier BDD en TDD.
+L'étape de coder la double boucle est longue attention. Ne pas griller les étapes TDD c'est le but du Kata.
+
+Dans la pyramide(4/), seul les étages TU et TF sont a remplir évidement.
